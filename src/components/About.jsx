@@ -8,7 +8,7 @@ const About = () => {
         {/* Left Image Content */}
         <div className="md:w-1/2 flex justify-center">
           <img
-            src="/public/cha.png"    
+            src="/cha.png"    
             alt="Rumit Developer Illustration"
             className="w-[350px] md:w-[450px] object-contain"
           />
