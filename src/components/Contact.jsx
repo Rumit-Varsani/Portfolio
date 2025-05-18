@@ -9,10 +9,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_jg1d8fn",      // replace with your service ID
-        "template_v1lrurc",     // replace with your template ID
+        "service_jg1d8fn", // replace with your service ID
+        "template_v1lrurc", // replace with your template ID
         form.current,
-        "5mMgII3FsJI8tF-YZ"       // replace with your public key
+        "5mMgII3FsJI8tF-YZ" // replace with your public key
       )
       .then(
         (result) => {
@@ -28,44 +28,58 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="min-h-screen bg-[#0F172A] px-6 md:px-20 py-16 text-white">
+    <section
+      id="contact"
+      className="min-h-screen bg-[#0F172A] px-4 sm:px-6 md:px-20 py-16 text-white"
+    >
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-blue-400 mb-4">Contact</h2>
-        <p className="text-gray-300 mb-12">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+        <h2 className="text-3xl sm:text-4xl font-bold text-blue-400 mb-4">
+          Contact
+        </h2>
+        <p className="text-gray-300 mb-12 text-base sm:text-lg">
+          Have a project in mind or want to collaborate? Feel free to reach out!
+        </p>
 
-        <form ref={form} onSubmit={sendEmail} className="space-y-6 bg-[#1E293B] p-8 rounded-xl shadow-lg">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="space-y-6 bg-[#1E293B] p-6 sm:p-8 rounded-xl shadow-lg"
+        >
+          {/* Input Fields */}
           <div className="flex flex-col md:flex-row gap-6">
             <input
               type="text"
               name="user_name"
               placeholder="Your Name"
               required
-              className="flex-1 p-3 bg-[#0F172A] border border-gray-700 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+              className="flex-1 p-3 text-sm sm:text-base bg-[#0F172A] border border-gray-700 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
               type="email"
               name="user_email"
               placeholder="Your Email"
               required
-              className="flex-1 p-3 bg-[#0F172A] border border-gray-700 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+              className="flex-1 p-3 text-sm sm:text-base bg-[#0F172A] border border-gray-700 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
+
+          {/* Message */}
           <textarea
             name="message"
             rows="5"
             placeholder="Your Message"
             required
-            className="w-full p-3 bg-[#0F172A] border border-gray-700 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 text-sm sm:text-base bg-[#0F172A] border border-gray-700 rounded-md outline-none focus:ring-2 focus:ring-blue-500"
           ></textarea>
+
+          {/* Submit Button */}
           <button
             type="submit"
-            className="px-6 py-3 bg-blue-500 text-white rounded-md font-semibold hover:bg-blue-600 transition"
+            className="w-full sm:w-auto px-6 py-3 bg-blue-500 text-white rounded-md font-semibold hover:bg-blue-600 transition"
           >
             Send Message
           </button>
         </form>
-
-       
       </div>
     </section>
   );
