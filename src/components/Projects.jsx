@@ -7,7 +7,7 @@ const Projects = () => {
           {/* Project Image Preview */}
           <div className="md:w-1/2">
             <img
-              src="src/assets/cha .png"
+              src="/cha.png"
               alt="Leaderboard App Preview"
               className="rounded-xl shadow-lg border border-gray-700"
             />
