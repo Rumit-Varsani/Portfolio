@@ -11,7 +11,7 @@ const Projects = () => {
       ],
       github: "https://github.com/Rumit-Varsani/Leaderboard_App",
       demo: "https://rumit-varsani-leaderboard.netlify.app/",
-      image: "src/assets/Swiggy.png",
+      image: "/Swiggy.png",
     },
     {
       title: "Food Ordering App",
@@ -20,7 +20,7 @@ const Projects = () => {
       tech: ["React", "Redux", "Tailwind CSS", "Live API Integration"],
       github: "https://github.com/Rumit-Varsani/Food_ordering_app",
       demo: "https://food-ordering-app-theta-nine.vercel.app/",
-      image: "src/assets/portfolio.png",
+      image: "/portfolio.png",
     },
     {
       title: "Portfolio Website",
@@ -29,7 +29,7 @@ const Projects = () => {
       tech: ["React", "Tailwind", "Framer Motion"],
       github: "https://github.com/Rumit-Varsani/portfolio",
       demo: "https://rumitvarsani.vercel.app/",
-      image: "src/assets/Git_hub.png",
+      image: "/Git_hub.png",
     },
   ];
 
