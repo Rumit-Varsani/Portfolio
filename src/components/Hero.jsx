@@ -1,4 +1,4 @@
-import profileImg from "../assets/Rumit.jpg";
+import profileImg from "/Rumit.jpg";
 
 const Hero = () => {
   return (
