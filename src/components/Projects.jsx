@@ -20,7 +20,7 @@ const Projects = () => {
       tech: ["React", "Redux", "Tailwind CSS", "Live API Integration"],
       github: "https://github.com/Rumit-Varsani/Food_ordering_app",
       demo: "https://food-ordering-app-theta-nine.vercel.app/",
-      image: "/assets/Food_ordering.png",
+      image: "src/assets/portfolio.png",
     },
     {
       title: "Portfolio Website",
@@ -29,7 +29,7 @@ const Projects = () => {
       tech: ["React", "Tailwind", "Framer Motion"],
       github: "https://github.com/Rumit-Varsani/portfolio",
       demo: "https://rumitvarsani.vercel.app/",
-      image: "/assets/Portfolio.png",
+      image: "src/assets/Git_hub.png",
     },
   ];
 
@@ -84,8 +84,8 @@ const Projects = () => {
             {/* Project Image */}
             <div className="w-full md:w-1/2 group">
               <img
-                src="src/assets/Swiggy.png"
-                alt="Food Ordering App Preview"
+                src={project.image}
+                alt={`${project.title} Preview`}
                 className="rounded-xl shadow-lg border border-gray-700 w-full max-w-[500px] md:max-w-[600px] mx-auto md:mx-0 transition-transform duration-300 group-hover:scale-105"
               />
             </div>
