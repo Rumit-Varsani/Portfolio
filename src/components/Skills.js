@@ -45,9 +45,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="w-full py-20 bg-white">
+    <section id="skills" className="w-full py-20 bg-[#0F172A]">
       <div className="max-w-6xl mx-auto px-6 sm:px-10 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-blue-400 mb-12">
           My Skills
         </h2>
 
@@ -56,14 +56,14 @@ const Skills = () => {
             <div
               key={name}
               tabIndex={0}
-              className="flex flex-col items-center gap-3 p-6 shadow-lg rounded-xl border border-gray-200 
-                hover:scale-105 focus:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
-                transition-transform duration-300 ease-in-out cursor-pointer"
+              className="flex flex-col items-center gap-3 p-6 bg-[#1E293B] rounded-xl border border-gray-700
+              hover:scale-105 focus:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500
+              transition-transform duration-300 ease-in-out cursor-pointer"
               aria-label={`${name} skill`}
               role="img"
             >
               {icon}
-              <p className="text-lg font-semibold text-gray-700">{name}</p>
+              <p className="text-lg font-semibold text-gray-300">{name}</p>
             </div>
           ))}
         </div>
