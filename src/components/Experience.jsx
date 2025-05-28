@@ -35,56 +35,59 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="min-h-screen px-4 sm:px-6 py-12 bg-[#0F172A] text-white"
+      className="min-h-screen bg-[#0F172A] text-white py-16 px-4"
     >
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-blue-400 mb-12 text-center">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-4xl font-bold text-center text-blue-400 mb-12">
           Experience
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10">
+        <div className="relative border-l-4 border-blue-500 ml-4">
           {experiences.map((exp, index) => (
-            <div
-              key={index}
-              className="bg-[#1E293B] p-5 sm:p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 transition duration-300 border border-blue-900"
-            >
-              {/* Job Title */}
-              <div className="flex items-center gap-3 mb-2">
-                <Briefcase className="text-blue-400" />
-                <h3 className="text-xl sm:text-2xl font-semibold text-blue-300">
-                  {exp.title}
-                </h3>
-              </div>
+            <div key={index} className="relative pl-10 pb-12">
+              {/* Dot */}
+              <span className="absolute -left-[10px] top-2 w-4 h-4 bg-blue-500 rounded-full border-4 border-[#0F172A]"></span>
 
-              {/* Company & Type */}
-              <div className="flex items-center gap-2 text-gray-300 text-sm mb-1">
-                <Building2 size={16} />
-                <span>
-                  {exp.company} • {exp.type}
-                </span>
-              </div>
+              {/* Card */}
+              <div className="bg-[#1E293B] p-6 rounded-xl shadow-lg border border-blue-900 hover:shadow-blue-500/30 transition duration-300">
+                {/* Title */}
+                <div className="flex items-center gap-2 mb-2">
+                  <Briefcase className="text-blue-400" />
+                  <h3 className="text-xl font-semibold text-blue-300">
+                    {exp.title}
+                  </h3>
+                </div>
 
-              {/* Duration */}
-              <div className="flex items-center gap-2 text-gray-400 text-sm mb-1 italic">
-                <CalendarDays size={16} />
-                <span>{exp.duration}</span>
-              </div>
+                {/* Company & Type */}
+                <div className="flex items-center gap-2 text-sm text-gray-300 mb-1">
+                  <Building2 size={16} />
+                  <span>
+                    {exp.company} • {exp.type}
+                  </span>
+                </div>
 
-              {/* Location */}
-              <div className="flex items-center gap-2 text-gray-400 text-sm mb-4 italic">
-                <MapPin size={16} />
-                <span>{exp.location}</span>
-              </div>
+                {/* Duration */}
+                <div className="flex items-center gap-2 text-sm italic text-gray-400 mb-1">
+                  <CalendarDays size={16} />
+                  <span>{exp.duration}</span>
+                </div>
 
-              {/* Responsibilities */}
-              <ul className="list-disc list-inside text-gray-200 space-y-1">
-                {exp.points.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <Code size={14} className="mt-1 text-blue-400" />
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
+                {/* Location */}
+                <div className="flex items-center gap-2 text-sm italic text-gray-400 mb-4">
+                  <MapPin size={16} />
+                  <span>{exp.location}</span>
+                </div>
+
+                {/* Points */}
+                <ul className="space-y-2 text-gray-200 text-[15px]">
+                  {exp.points.map((point, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <Code size={16} className="text-blue-400 mt-1" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>
