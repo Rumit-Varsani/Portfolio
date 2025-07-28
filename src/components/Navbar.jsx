@@ -18,7 +18,7 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-6">
-          {["home", "about", "skills", "experience", "projects", "contact"].map(link => (
+          {["home", "about", "skills", "experience", "projects","certificates","languages", "contact"].map(link => (
             <li key={link} className="cursor-pointer hover:text-blue-400 transition">
               <a href={`#${link}`}>{link.charAt(0).toUpperCase() + link.slice(1)}</a>
             </li>
@@ -36,7 +36,7 @@ const Navbar = () => {
       {/* Mobile Dropdown Nav */}
       {isOpen && (
         <ul className="md:hidden flex flex-col items-center gap-4 mt-4 pb-4 bg-gray-800 rounded-lg">
-          {["home", "about", "skills", "experience", "projects", "contact"].map(link => (
+          {["home", "about", "skills", "experience", "projects","certificates","languages", "contact"].map(link => (
             <li key={link} className="cursor-pointer hover:text-blue-400 transition">
               <a href={`#${link}`} onClick={() => setIsOpen(false)}>
                 {link.charAt(0).toUpperCase() + link.slice(1)}

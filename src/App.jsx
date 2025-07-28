@@ -7,7 +7,8 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-
+import Certificates from "./components/Certificates";
+import Languages from "./components/Languages";
 const App = () => {
   useEffect(() => {
     const hash = window.location.hash;
@@ -30,6 +31,8 @@ const App = () => {
       <Skills />
       <Experience />
       <Projects />
+      <Certificates />
+      <Languages />
       <Contact />
       <Footer />
     </>

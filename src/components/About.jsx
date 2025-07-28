@@ -12,15 +12,13 @@ const About = () => {
             About Me
           </h2>
           <p className="text-lg leading-relaxed text-gray-300">
-            Hi, I'm Rumit Varsani, a passionate Frontend Developer with a strong
-            foundation in HTML, CSS, JavaScript, and React. I love building
-            clean, responsive user interfaces and continuously learning new
-            technologies.
+            I'm a Front-End Developer based in Berlin with a Master’s degree in Data Analytics and strong hands-on experience in building fast, responsive, and scalable React.js applications. I specialize in modern JavaScript (ES6+), Redux, Tailwind CSS, and REST API integration, with a deep focus on clean architecture, performance optimization, and maintainable code.
           </p>
           <p className="mt-4 text-lg text-gray-300">
-            I'm also skilled in tools like Redux, Bootstrap, TailwindCSS, and
-            REST API integrations. I aim to create seamless, user-focused
-            applications.
+            My background includes both industry work and personal projects that demonstrate a high level of technical proficiency, attention to UI/UX details, and collaborative development in Agile environments. I have deployed multiple full-featured apps using tools like Firebase, Netlify, and Vercel, and I actively use Git, GitHub, and Chrome DevTools in my workflow.
+          </p>
+          <p className="mt-4 text-lg text-gray-300">
+            I’m currently based in Berlin but open to opportunities across Germany. As I continue to improve my German (currently at B1 level), I’m seeking a role where I can contribute to impactful front-end projects, learn from experienced teams, and grow as a developer in Germany’s thriving tech ecosystem.
           </p>
         </div>
 
