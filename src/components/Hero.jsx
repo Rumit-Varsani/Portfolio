@@ -15,7 +15,7 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-blue-300 mb-6">
             Frontend Developer
           </p>
-          <a href="https://drive.google.com/file/d/1IhCT2nGYb4peeHuaPUE6utGxwGr0E_WG/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/file/d/1xPUB3yyln17gaW7xqhsdU6IKuC-LOFH4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-all">
               Resume
             </button>
